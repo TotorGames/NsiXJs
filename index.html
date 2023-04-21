@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <!-- Création de 2 blocs vrai ou faux -->
+    <form action="post">
+        <h6>Peut on donner une clé dans une liste ?</h6>
+        <input type="button" value="True" onclick="TF1('True');">
+        <input type="button" value="False" onclick="TF1('False');">
+    </form>
+    <form action="post">
+        <h6>Python est un language simple :</h6>
+        <input type="button" value="True" onclick="TF1('True');">
+        <input type="button" value="False" onclick="TF1('False');">
+    </form>
+    <!-- Création de 2 blocs avec une liste déroulante -->
+    <h6>Quel est la fonction pour avoir la longueur d'un élément : </h6>
+    <select id="choix1" name="lang1" onchange="selection1();">
+        <option value="-">----</option>
+        <option value="len"> Len </option>
+        <option value="long"> long </option>
+        <option value="len"> lenth </option>
+    </select>
+
+    <h6>prenom  =['pascal', 'pierre', 'bérénice', 'isabelle', 'mathieu', 'joachim', 'anabelle'] à quoi est égal prenom[1]?  </h6>
+    <select id="choix2" name="lang2" onchange="selection2();">
+        <option value="-">----</option>
+        <option value="pascal"> pascal </option>
+        <option value="pier"> pier </option>
+        <option value="pierre">pierre </option>
+    </select>
+    <!-- Création de 2 blocs à réponses multiples -->
+    <form action="" >
+        <h6>Quel est le language de programmation utilisé en NSI ?</h6>
+        <input type="text" name="vr1" id="v1" value="">
+        <input type="button" value="Valider" onclick="conf1();">
+    </form>
+
+    <form action="">
+        <h6>Quel est élement qui permet de faire un boucle limité avec python ?</h6>
+        <input type="text" name="vr2" id="v2" value="">
+        <input type="button" value="Valider" onclick="conf2();">
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
